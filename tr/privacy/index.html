@@ -16,12 +16,13 @@
     <main class="page">
       <a class="back" href="../">Vocablora</a>
       <h1>Gizlilik politikası</h1>
-      <p class="updated">Son güncelleme: 26 Ekim 2026</p>
+      <p class="updated">Son güncelleme: 6 Kasım 2026</p>
       <p><a href="../../privacy/" hreflang="en" lang="en">English</a></p>
 
       <p class="note">
         Desteleriniz ve ayarlarınız cihazınızda kalır. Vocablora uygulamasında hesap, analiz, reklam
-        ve çerez yoktur; uygulamanın kendi internet bağlantısı yoktur.
+        ve çerez yoktur. İnternete yalnızca yapay zeka ile kart oluşturmayı seçtiğinizde, bu yasal
+        sayfaları açtığınızda ya da bize yazdığınızda bağlanır.
       </p>
 
       <h2>1. Biz kimiz</h2>
@@ -46,8 +47,8 @@
           oluşturulma ve değiştirilme zamanları.
         </li>
         <li>
-          Ayarlarınız: uygulama dili, tema, deste düzeni, çalışma yöntemi ile öğrendiğiniz ve anlam
-          dilleri.
+          Ayarlarınız: uygulama dili, tema, deste düzeni, çalışma yöntemi, öğrendiğiniz ve anlam
+          dilleri ile yapay zeka ile kart oluşturma izin ayarınız (varsayılan olarak kapalı).
         </li>
         <li>
           Eklemekte olduğunuz yarım bir deste; bir sohbet uygulamasına geçip dönerken kaybolmasın
@@ -64,13 +65,13 @@
         hesabınıza aittir ve biz onu göremeyiz.
       </p>
 
-      <h2>3. Kendi internet bağlantısı yok</h2>
+      <h2>3. İnternet bağlantıları</h2>
       <p>
-        Uygulama ihtiyaç duyduğu her şeyi içinde taşır. Kendi başına internete bağlanmaz; bize ya da
-        başka birine hiçbir şey göndermez. Bunun tek istisnaları sizin başlattıklarınızdır: bu
-        sayfaları Ayarlar'dan ya da Lisanslar sayfasından açmak (11. bölüm) ve bize yazmak (7.
-        bölüm). Kendi güncelleme kontrolü yoktur: yeni sürümler App Store ya da Google Play
-        üzerinden gelir.
+        Uygulama çalışmak için ihtiyaç duyduğu her şeyi içinde taşır. Kendi başına internete
+        bağlanmaz; bize ya da başka birine hiçbir şey göndermez. Bunun tek istisnaları sizin
+        başlattıklarınızdır: yapay zeka ile kart oluşturmak (6. bölüm), bu sayfaları Ayarlar'dan ya
+        da Lisanslar sayfasından açmak (12. bölüm) ve bize yazmak (8. bölüm). Kendi güncelleme
+        kontrolü yoktur: yeni sürümler App Store ya da Google Play üzerinden gelir.
       </p>
 
       <h2>4. App Store ve Google Play</h2>
@@ -91,7 +92,42 @@
         politikası ve koşullarına tabidir.
       </p>
 
-      <h2>6. Yapmadıklarımız</h2>
+      <h2>6. Yapay zeka ile kart oluşturma</h2>
+      <p>
+        Uygulamada kendi kelimelerinizi yazarak isteğe bağlı olarak kart oluşturabilirsiniz. Bu
+        özellik varsayılan olarak kapalıdır ve izninizi gerektirir.
+      </p>
+      <p>
+        "İzin ver"e dokunup yapay zeka ile deste oluşturmayı seçtiğinizde Vocablora, kartlarınızı
+        oluşturmak için yazdığınız kelimeleri, öğrendiğiniz dili, anlam dilini ve seviyenizi
+        şifreli bir HTTPS bağlantısı üzerinden geliştirici tarafından işletilen bir Cloudflare
+        Worker'a, oradan da bir yapay zeka servisi olan
+        <a href="https://groq.com/privacy-policy/">Groq</a>'a gönderir.
+      </p>
+      <p>
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, istekleri yönlendirmek
+        ve kötüye kullanımı sınırlamak için cihazınızın IP adresini görür. Worker'ımız IP adresini
+        yalnızca istekleri sınırlamak için kısa süreli bir sayaçta kullanır ve kaydetmez. Worker
+        gözlemlenebilirlik (observability) özelliği kapalıdır. Cloudflare, ağ trafiğini Amerika
+        Birleşik Devletleri ve diğer ülkelerde kendi gizlilik politikasına göre işler.
+      </p>
+      <p>
+        Groq, kelimeleri kartları oluşturmak için işler ve hesabımızda veri saklamama (Zero Data
+        Retention) ayarı açık olduğu için girdileri ve çıktıları kaydetmez. Groq, sözleşme gereği
+        bunları model eğitmek için kullanamaz. İşleme Amerika Birleşik Devletleri ve diğer ülkelerde
+        olabilir.
+      </p>
+      <p>
+        Oluşturulan kartlar doğrudan cihazınıza döner ve uygulamanın yerel deposuna kaydedilir; bizim
+        tarafımızdan hiçbir sunucuda tutulmaz. Lütfen kelimelerinizin arasına kişisel bilgi
+        yazmayın.
+      </p>
+      <p>
+        Bu özelliği dilediğiniz zaman Ayarlar'daki "Yapay zeka ile kart oluşturma" seçeneğinden
+        açıp kapatabilirsiniz.
+      </p>
+
+      <h2>7. Yapmadıklarımız</h2>
       <ul>
         <li>Hesap açmanızı ya da giriş yapmanızı istemeyiz.</li>
         <li>Çerez, analiz, reklam ya da izleme kullanmayız.</li>
@@ -102,14 +138,14 @@
         </li>
       </ul>
 
-      <h2>7. Bize e-posta gönderirseniz</h2>
+      <h2>8. Bize e-posta gönderirseniz</h2>
       <p>
         Bize yazarsanız e-posta adresinizi, varsa adınızı ve mesajınızı alırız. Bunları yalnızca
         size yanıt vermek için kullanırız. Yazışmayı, son mesajından 12 ay sonra sileriz. E-posta
         hizmetimizi Google (Gmail) sağlar.
       </p>
 
-      <h2>8. Seçenekleriniz ve haklarınız</h2>
+      <h2>9. Seçenekleriniz ve haklarınız</h2>
       <ul>
         <li>Bir desteyi uygulamada istediğiniz zaman silebilirsiniz.</li>
         <li>
@@ -127,21 +163,26 @@
         kullanmak için bize yazın. Veri koruma kurumuna da şikâyette bulunabilirsiniz.
       </p>
 
-      <h2>9. Çocuklar</h2>
+      <h2>10. Çocuklar</h2>
       <p>
         Vocablora 13 yaş ve üzeri kişiler için tasarlanmıştır ve çocuklara yönelik değildir. Yaş ya
         da doğum tarihi sormayız ve yaşla ilgili hiçbir veri tutmayız.
       </p>
 
-      <h2>10. Yurt dışına aktarım</h2>
+      <h2>11. Yurt dışına aktarım</h2>
       <p>
         E-posta hizmetimizi sağlayan Google, e-postaları Amerika Birleşik Devletleri'nde işler.
         Apple ve Google, 4. bölümde anlatılan verileri Amerika Birleşik Devletleri dahil birçok
-        ülkede, kendi politikalarına göre işler. Türkiye'deki kullanıcılar için ayrıntılar
+        ülkede, kendi politikalarına göre işler. Yapay zeka ile kart oluşturmayı kullanırsanız
+        (6. bölüm), yazdığınız kelimeler, diller, seviyeniz ve IP adresiniz Cloudflare ve Groq
+        tarafından Amerika Birleşik Devletleri ve diğer ülkelerde işlenir. Bu aktarım, özellik
+        öncesinde uygulama içindeki izin kutusunda verdiğiniz açık rızanıza dayanır; rızanızı
+        dilediğiniz zaman Ayarlar'dan geri alabilirsiniz ve geri almanız sonraki aktarımları
+        durdurur. Türkiye'deki kullanıcılar için ayrıntılar
         <a href="../kvkk/">KVKK Aydınlatma Metni</a>'ndedir.
       </p>
 
-      <h2>11. Bu sayfalar</h2>
+      <h2>12. Bu sayfalar</h2>
       <p>
         Bu sayfalar GitHub Pages üzerinde barındırılır. Sayfaları tarayıcıda açan herkesin IP adresi
         gibi teknik verilerini GitHub, kendi
@@ -153,13 +194,13 @@
         (İngilizce) göre alır.
       </p>
 
-      <h2>12. Değişiklikler</h2>
+      <h2>13. Değişiklikler</h2>
       <p>
         Bu politika değişirse en üstteki tarihi güncelleriz. Cihazınızdan çıkan verileri etkileyen
         bir değişiklik, onu getiren uygulama sürümü yayımlanmadan önce burada anlatılır.
       </p>
 
-      <h2>13. Diller</h2>
+      <h2>14. Diller</h2>
       <p>
         Bu politika <a href="../../privacy/" hreflang="en" lang="en">İngilizce</a> olarak da vardır.
         Sürümler arasında fark olursa İngilizce sürüm geçerlidir; yasanın Türkçe metni zorunlu

@@ -15,7 +15,7 @@
     <main class="page">
       <a class="back" href="../">Vocablora</a>
       <h1>KVKK Aydınlatma Metni</h1>
-      <p class="updated">Son güncelleme: 26 Ekim 2026</p>
+      <p class="updated">Son güncelleme: 6 Kasım 2026</p>
 
       <p>
         Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca,
@@ -32,10 +32,11 @@
       <h2>2. Veri sorumlusuna ulaşmayan veriler</h2>
       <p>
         Desteleriniz, ayarlarınız ve yarım kalan bir deste yalnızca cihazınızda, uygulamanın kendi
-        deposunda tutulur. Uygulamanın kendi internet bağlantısı yoktur; bu veriler veri sorumlusuna
-        ya da herhangi bir sunucuya gönderilmez ve veri sorumlusu bunlara erişemez. Cihazınızın
-        kendi yedeği (örneğin iCloud ya da Google yedeği) bu verileri içerebilir; bu yedek Apple ya
-        da Google'daki hesabınıza aittir ve veri sorumlusu onu göremez.
+        deposunda tutulur. Yapay zeka ile kart oluşturmayı seçmediğiniz sürece uygulamanın kendi
+        internet bağlantısı yoktur; bu veriler veri sorumlusuna ya da herhangi bir sunucuya
+        gönderilmez ve veri sorumlusu bunlara erişemez. Cihazınızın kendi yedeği (örneğin iCloud ya
+        da Google yedeği) bu verileri içerebilir; bu yedek Apple ya da Google'daki hesabınıza aittir
+        ve veri sorumlusu onu göremez.
       </p>
 
       <h2>3. İşlenen kişisel veriler ve işleme amaçları</h2>
@@ -59,6 +60,13 @@
             </td>
             <td>Uygulamadaki hataların bulunması ve düzeltilmesi</td>
           </tr>
+          <tr>
+            <td>
+              Yapay zeka ile kart oluşturmayı seçerseniz: yazdığınız kelimeler, öğrendiğiniz dil,
+              anlam dili, seviyeniz ve istek sırasında iletilen IP adresiniz
+            </td>
+            <td>Kartların (kelime, anlam ve örnek) oluşturulması ve istek sınırlandırması</td>
+          </tr>
         </tbody>
       </table>
 
@@ -74,6 +82,11 @@
           tarafından otomatik yollarla toplanıp veri sorumlusuna iletilir. Hukuki sebep, uygulamanın
           çalışır durumda tutulmasında veri sorumlusunun meşru menfaatidir (KVKK m. 5/2-f).
         </li>
+        <li>
+          Yapay zeka ile kart oluşturma verileri, uygulama içinde izin vermeniz ve kart oluşturma
+          düğmesine dokunmanız hâlinde elektronik ortamda iletilir. Hukuki sebep, açık rızanızdır
+          (KVKK m. 5/1).
+        </li>
       </ul>
 
       <h2>5. Aktarım</h2>
@@ -86,6 +99,15 @@
         <li>
           Bu hizmet sağlayıcılar verileri Amerika Birleşik Devletleri dahil yurt dışında işler; bu
           nedenle kişisel verileriniz yurt dışına aktarılır.
+        </li>
+        <li>
+          Yapay zeka ile kart oluşturmayı seçtiğinizde kelimeleriniz ve istek parametreleri,
+          kartların oluşturulması amacıyla Cloudflare ve Groq sistemlerine iletilir. Bu hizmet
+          sağlayıcılar verileri Amerika Birleşik Devletleri ve diğer ülkelerde işler; bu nedenle
+          kişisel verileriniz yurt dışına aktarılır. Bu aktarım, kart oluşturma öncesinde uygulama
+          içindeki izin kutusunda verdiğiniz açık rızanıza dayanır (KVKK m. 9/6-a). Bu rızayı
+          dilediğiniz zaman Ayarlar'dan geri alabilirsiniz; rızanın geri alınması sonraki
+          aktarımları durdurur.
         </li>
         <li>
           Uygulamanın indirilmesi, kurulması ve güncellenmesi sırasında Apple ve Google'ın işlediği
@@ -101,6 +123,11 @@
           Çökme ve performans raporları, Apple ve Google'ın kendi sistemlerinde belirlediği süre
           boyunca tutulur; veri sorumlusu bunları Apple ve Google'ın geliştirici araçlarında görür
           ve başka bir yerde saklamaz.
+        </li>
+        <li>
+          Yapay zeka ile kart oluşturmada Worker kodumuz kelimeleri ve IP adresini saklamaz
+          (gözlemlenebilirlik kapalıdır). Groq, hesabımızda veri saklamama (Zero Data Retention)
+          ayarı açık olduğu için girdi ve çıktıları kaydetmez.
         </li>
       </ul>
 
