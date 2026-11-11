@@ -16,7 +16,7 @@
     <main class="page">
       <a class="back" href="../">Vocablora</a>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated: 9 November 2026</p>
+      <p class="updated">Last updated: 11 November 2026</p>
       <p><a href="../tr/privacy/" hreflang="tr" lang="tr">Türkçe</a></p>
 
       <p class="note">
@@ -45,19 +45,27 @@
         </li>
         <li>
           Your settings: the app language, theme, deck layout, study method, your learning and
-          meaning languages, and your AI card creation permission setting (off by default).
+          meaning languages, your AI card creation permission setting (off by default), whether
+          haptics are on, and the daily reminder: whether it is on and its time.
         </li>
         <li>
-          An unfinished deck you are adding, so it is not lost while you switch to a chat app. It is
-          removed when you save or discard it.
+          An unfinished deck you are adding, or unfinished words you are adding to a deck, so they
+          are not lost while you switch to a chat app. They are removed when you save or discard
+          them.
         </li>
         <li>
           Which screen you were last on, so the app can reopen it within 15 minutes if your device
           closes the app in the background.
         </li>
+        <li>
+          For the request to rate the app: when you first opened the app, on which days you
+          finished a study session, how many sessions you finished, and when the app last asked.
+          The app uses these only to ask rarely and never shows them.
+        </li>
       </ul>
       <p>
-        Vocablora does not save your study sessions or results. The app reads your device's language
+        Vocablora does not save your study sessions or their results; it keeps only the counters
+        above. The app reads your device's language
         list to choose the app language, but does not store that list.
       </p>
       <p>
@@ -72,22 +80,40 @@
         and sends nothing to us or to anyone else, except for actions you start yourself: creating
         cards with AI (section 6), opening these pages from Settings or the Licences page (section
         12) and writing to us (section 8). It has no update check of its own: new versions come
-        through the App Store or Google Play.
+        through the App Store or Google Play. In the version installed from Google Play, Google adds
+        code that checks that the app was installed from Google Play; this code and the Android
+        components that run inside the app may communicate with Google under Google's policies.
       </p>
 
       <h2>4. The App Store and Google Play</h2>
       <p>
         Apple and Google handle downloading, installing and updating the app, under their own
-        privacy policies. If you allow your device to share diagnostics with app developers, they
-        may give us crash and performance reports, such as the device model, the system version and
-        where the app failed. These reports do not contain your decks, and we use them only to find
-        and fix problems.
+        privacy policies. If you allow your device to share analytics or diagnostics with app
+        developers (on iPhone in its analytics settings, on Android in its usage and diagnostics
+        setting), Apple or Google may show us crash and performance information in their developer
+        tools: statistics, such as how many devices had a problem, by app version, device model,
+        system version and country or region, and some individual crash reports, which show where in
+        the app's code the problem happened, the device model, the system and app versions and the
+        time. Apple's reports can also carry a code that stays the same for every report from the
+        same device until the device is erased, so these reports are not fully anonymous.
+      </p>
+      <p>
+        Apple and Google say they remove personal or potentially sensitive information from the
+        reports, and the fields they describe include no name, e-mail address, account or IP
+        address. We use them only to find and fix problems. We know of no setting that lets us stop
+        Apple or Google from collecting them; the setting is on your device. If you test the app
+        through TestFlight, Apple shares crash reports whatever your device settings, and feedback you
+        send through TestFlight reaches us with your name, e-mail address and some device details.
+      </p>
+      <p>
+        Rarely, the app may ask you to rate it. The rating window belongs to Apple or
+        Google, and what you enter there goes to them under their own policies, not to us.
       </p>
 
       <h2>5. Making decks with a chat service</h2>
       <p>
         To add a deck, you can copy a prompt and paste it into a chat service you choose. The prompt
-        contains only your chosen languages, the level and fixed instructions. Vocablora sends
+        contains your chosen languages, the level, fixed instructions and any words you entered or picked from a ready-made list. Vocablora sends
         nothing to the chat service and never reads your clipboard: you copy and paste yourself.
         What you type into that service is governed by its own privacy policy and terms.
       </p>
@@ -98,28 +124,39 @@
         default and requires your permission.
       </p>
       <p>
-        If you tap "Allow" and choose to create a deck with AI, Vocablora sends the words you type,
+        If you tap "Allow" and choose to create a deck or add words with AI, Vocablora sends the words you type,
         the language you are learning, the meaning language and your level over an encrypted HTTPS
         connection to a Cloudflare Worker run by the developer, which forwards them to
         <a href="https://groq.com/privacy-policy/">Groq</a>, an AI service, to generate the cards.
       </p>
       <p>
         <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> sees your device's IP
-        address to route the request and limit request abuse. Our Worker passes your IP address only
-        to Cloudflare's rate limiting, to limit requests, and does not store it. Worker observability is
-        turned off. Cloudflare processes network traffic under its own privacy policy in the United
-        States and other countries.
+        address, because it routes the request. To limit request abuse, our Worker calculates a code
+        from your IP address and the date with a secret key, so the code changes every day. Our
+        Worker gives this code, not your IP address, to Cloudflare's rate limiting, which keeps a
+        count of requests for each code under Cloudflare's terms. The code is not anonymous: whoever
+        holds the key could match it to an IP address. Our Worker code does not write the code, your
+        IP address or your words anywhere, and Worker logs are turned off. Cloudflare processes
+        network traffic under its own privacy policy in the United States and other countries.
       </p>
       <p>
-        Groq processes the words to create the cards and does not log inputs or outputs because the
-        Zero Data Retention setting is enabled on our account. Under its agreement with us, Groq may
-        not use them to train models unless we permit or instruct it to, and we have not. Processing
-        may take place in the United States and other countries.
+        Our Worker sends Groq only the words, the languages, the level and fixed instructions; it
+        does not add your IP address or any device identifier. Groq processes them to create the
+        cards. The Zero Data Retention setting is enabled on our account, and Groq states that with
+        this setting it does not retain the inputs and outputs. Groq does keep usage metadata, which
+        it says contains no inputs or outputs, to measure service activity and performance. Under its
+        agreement with us, Groq may not use your words to train models unless we permit or instruct
+        it to, and we have not. Processing may take place in the United States and other countries.
       </p>
       <p>
         The generated cards are returned directly to your device and saved in the app's local
         storage. They are never kept on a server by us. Please do not type personal information
-        among your vocabulary words.
+        among your vocabulary words. Before sending, the app checks the words: if one looks like an
+        e-mail address, a web address or a long number such as a phone number, the app names that
+        word and sends nothing. Our Worker runs the same check again: if such a word still reaches it
+        (for example from an older version of the app), the request has already reached Cloudflare
+        and our Worker, but our Worker refuses it and does not pass it on to Groq. Both checks catch
+        only obvious cases; other personal information you type is sent like any other word.
       </p>
       <p>
         You can turn this feature on or off at any time in Settings under "AI card creation".
@@ -131,16 +168,28 @@
         <li>We do not use cookies, analytics, advertising or tracking.</li>
         <li>We do not sell or share your data.</li>
         <li>
-          We do not ask for access to your location, camera, microphone, contacts, photos or
-          notifications.
+          We do not ask for access to your location, camera, microphone, contacts or photos. If you
+          switch on the daily reminder in Settings, the app asks for permission to show
+          notifications; the reminder is scheduled on your device and nothing is sent to us.
         </li>
       </ul>
 
       <h2>8. If you e-mail us</h2>
       <p>
-        If you write to us, we receive your e-mail address, any name in it and your message. We use
-        them only to answer you. We delete the conversation 12 months after its last message. Our
-        mailbox is provided by Google (Gmail).
+        If you write to us, we receive your e-mail address, any name in it, your message and anything
+        you attach. We use them only to answer you: we do not add you to any list or use your message
+        for anything else. Our mailbox is a Gmail account, so Google stores and processes the
+        messages on its servers in the United States and other countries, under its own privacy
+        policy. Please write only what we need to answer you, and do not send files, documents or
+        other people's details unless we ask for them.
+      </p>
+      <p>
+        We delete a conversation no later than 6 months after its last message, or sooner if you ask.
+        We do this by hand: once a month we delete the conversations whose last message is more than
+        5 months old and empty Gmail's bin straight away, so they do not wait there for Gmail's
+        automatic deletion after 30 days. After that, Google removes the data from its systems under
+        its own retention policy; Google says this generally takes around 2 months and that its
+        encrypted backups can keep data for up to 6 months.
       </p>
 
       <h2>9. Your choices and rights</h2>
@@ -155,9 +204,11 @@
       <p>
         Depending on where you live, data protection laws such as the GDPR or Türkiye's KVKK give
         you rights to access, correct, delete or object to the processing of your personal data.
-        Because your decks never reach us, the only personal data we process is the e-mail you send
-        us and any crash reports described in section 4, which we view in Apple's and Google's
-        developer tools and do not keep elsewhere. To use your rights, write to us. You can also
+        Because your decks never reach us, the personal data we process is limited to the e-mail you
+        send us, the AI card requests described in section 6, which our Worker passes on without
+        saving them, and the crash reports and TestFlight feedback described in section 4, which we
+        view in Apple's and Google's developer tools and do not keep elsewhere. To use your rights,
+        write to us. You can also
         complain to your data protection authority.
       </p>
 
@@ -169,24 +220,29 @@
 
       <h2>11. Transfers abroad</h2>
       <p>
-        Google, which provides our mailbox, processes e-mails in the United States. Apple and Google
+        Google, which provides our mailbox, processes e-mails in the United States and other
+        countries. GitHub, which hosts these pages, logs visitors' IP addresses and processes data in
+        several countries, including the United States (section 12). Apple and Google
         process the data described in section 4 in several countries, including the United States,
         under their own policies. If you use AI card creation (section 6), the words you type, your
         chosen languages and level are processed by Cloudflare and Groq, and your IP address only by
-        Cloudflare, in the United States and other countries, based on your explicit consent requested in the in-app consent
-        dialog. You can revoke this consent at any time in Settings, which stops subsequent
-        transfers. For users in Türkiye, the
+        Cloudflare, in the United States and other countries. This happens only after you allow it
+        in the in-app dialog, and you can withdraw that permission at any time in Settings, which
+        stops further transfers. For users in Türkiye, the
         <a href="../tr/kvkk/" hreflang="tr" lang="tr">KVKK Aydınlatma Metni</a> gives the details.
       </p>
 
       <h2>12. These pages</h2>
       <p>
-        These pages are hosted on GitHub Pages. GitHub receives the technical data of anyone who
-        opens them in a browser, such as the IP address, under its own
+        These pages are hosted on GitHub Pages. When anyone opens them in a browser, GitHub logs and
+        stores the visitor's IP address for security purposes, whether or not the visitor is signed
+        in to GitHub. GitHub handles these logs under its own
         <a
           href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
           >privacy statement</a
-        >.
+        >
+        and processes data in several countries, including the United States. We do not receive
+        these logs. In the app, these pages open only when you tap a link to them.
       </p>
 
       <h2>13. Changes</h2>

@@ -15,7 +15,7 @@
     <main class="page">
       <a class="back" href="../">Vocablora</a>
       <h1>KVKK Aydınlatma Metni</h1>
-      <p class="updated">Son güncelleme: 6 Kasım 2026</p>
+      <p class="updated">Son güncelleme: 11 Kasım 2026</p>
 
       <p>
         Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca,
@@ -31,12 +31,23 @@
 
       <h2>2. Veri sorumlusuna ulaşmayan veriler</h2>
       <p>
-        Desteleriniz, ayarlarınız ve yarım kalan bir deste yalnızca cihazınızda, uygulamanın kendi
-        deposunda tutulur. Yapay zeka ile kart oluşturmayı seçmediğiniz sürece uygulamanın kendi
+        Desteleriniz, ayarlarınız (titreşim ve günlük hatırlatıcı tercihleri dahil), yarım kalan
+        bir deste ya da desteye eklenen yarım kalan kelimeler ve uygulamayı değerlendirme isteği için tutulan sayaçlar yalnızca cihazınızda,
+        uygulamanın kendi deposunda tutulur. Günlük hatırlatıcı cihazınızda kurulan bir bildirimdir. Yapay zeka ile kart oluşturmayı seçmediğiniz sürece uygulamanın kendi
         internet bağlantısı yoktur; bu veriler veri sorumlusuna ya da herhangi bir sunucuya
-        gönderilmez ve veri sorumlusu bunlara erişemez. Cihazınızın kendi yedeği (örneğin iCloud ya
+        gönderilmez ve veri sorumlusu bunlara erişemez. Google Play'den yüklenen sürüme Google,
+        uygulamanın Google Play'den yüklendiğini denetleyen bir kod ekler; bu kod ve uygulamanın
+        içinde çalışan Android bileşenleri, Google'ın politikalarına göre Google ile iletişim
+        kurabilir. Cihazınızın kendi yedeği (örneğin iCloud ya
         da Google yedeği) bu verileri içerebilir; bu yedek Apple ya da Google'daki hesabınıza aittir
         ve veri sorumlusu onu göremez.
+      </p>
+      <p>
+        Bu metin ve diğer Vocablora sayfaları GitHub Pages üzerinde barındırılır. Sayfaları bir
+        tarayıcıda açan herkesin IP adresi, GitHub'a giriş yapmış olup olmamasından bağımsız olarak
+        GitHub tarafından güvenlik amacıyla kaydedilir ve saklanır. GitHub bu kayıtlara kendi
+        gizlilik bildirimini uygular ve verileri Amerika Birleşik Devletleri dahil birçok ülkede
+        işler. Bu kayıtlar veri sorumlusuna gelmez.
       </p>
 
       <h2>3. İşlenen kişisel veriler ve işleme amaçları</h2>
@@ -49,23 +60,38 @@
         </thead>
         <tbody>
           <tr>
-            <td>Bize e-posta gönderirseniz: e-posta adresiniz, varsa adınız ve mesajınız</td>
+            <td>
+              Bize e-posta gönderirseniz: e-posta adresiniz, varsa adınız, mesajınız ve eklediğiniz
+              dosyalar
+            </td>
             <td>Sorunuzun, talebinizin ya da başvurunuzun yanıtlanması</td>
           </tr>
           <tr>
             <td>
-              Cihazınız tanılama verilerini uygulama geliştiricileriyle paylaşmaya ayarlıysa, Apple
-              ya da Google'ın ilettiği çökme ve performans raporları: cihaz modeli, sistem sürümü ve
-              uygulamanın nerede hata verdiği gibi bilgiler
+              Cihazınız analiz ya da tanılama verilerini uygulama geliştiricileriyle paylaşmaya
+              ayarlıysa (TestFlight'ta ayardan bağımsız olarak), Apple ya da Google'ın geliştirici
+              araçlarında gösterdiği çökme ve performans bilgileri: toplu istatistikler (uygulama
+              sürümü, cihaz modeli, sistem sürümü, ülke ya da bölge) ve tekil çökme raporları
+              (sorunun uygulama kodunda nerede çıktığı, cihaz modeli, sistem ve uygulama sürümü,
+              zaman; Apple'da aynı cihazdan gelen raporlarda aynı kalan bir kod); TestFlight
+              üzerinden geri bildirim gönderirseniz adınız, e-posta adresiniz, yorumunuz ve bazı
+              cihaz bilgileri
             </td>
-            <td>Uygulamadaki hataların bulunması ve düzeltilmesi</td>
+            <td>
+              Uygulamadaki hataların bulunması ve düzeltilmesi; TestFlight geri bildiriminin
+              değerlendirilmesi
+            </td>
           </tr>
           <tr>
             <td>
               Yapay zeka ile kart oluşturmayı seçerseniz: yazdığınız kelimeler, öğrendiğiniz dil,
-              anlam dili, seviyeniz ve istek sırasında iletilen IP adresiniz
+              anlam dili ve seviyeniz; istek sırasında Cloudflare'e ulaşan IP adresiniz ve IP
+              adresinizden ve tarihten gizli bir anahtarla hesaplanan, her gün değişen kod
             </td>
-            <td>Kartların (kelime, anlam ve örnek) oluşturulması ve istek sınırlandırması</td>
+            <td>
+              Kartların (kelime, anlam ve örnek) oluşturulması ve kötüye kullanımı önlemek için
+              istek sınırlandırması
+            </td>
           </tr>
         </tbody>
       </table>
@@ -78,9 +104,12 @@
           veri sorumlusunun meşru menfaati için veri işlenmesinin zorunlu olmasıdır (KVKK m. 5/2-f).
         </li>
         <li>
-          Çökme ve performans raporları, cihaz ayarlarınız izin veriyorsa Apple ya da Google
-          tarafından otomatik yollarla toplanıp veri sorumlusuna iletilir. Hukuki sebep, uygulamanın
-          çalışır durumda tutulmasında veri sorumlusunun meşru menfaatidir (KVKK m. 5/2-f).
+          Çökme ve performans bilgileri, cihaz ayarlarınız izin veriyorsa (TestFlight'ta ayardan
+          bağımsız olarak) Apple ya da Google tarafından otomatik yollarla toplanır ve veri
+          sorumlusuna bu şirketlerin geliştirici araçlarında gösterilir; veri sorumlusu, bu
+          toplamayı durdurmasını sağlayan bir ayar bilmemektedir. TestFlight geri bildirimi, siz
+          gönderdiğinizde Apple aracılığıyla iletilir. Hukuki sebep, uygulamanın çalışır durumda
+          tutulmasında veri sorumlusunun meşru menfaatidir (KVKK m. 5/2-f).
         </li>
         <li>
           Yapay zeka ile kart oluşturma verileri, uygulama içinde izin vermeniz ve kart oluşturma
@@ -91,7 +120,10 @@
 
       <h2>5. Aktarım</h2>
       <ul>
-        <li>E-posta verileri, e-posta hizmetini sağlayan Google tarafından işlenir.</li>
+        <li>
+          E-posta verileri, e-posta hizmetini sağlayan Google tarafından, Google'ın Amerika Birleşik
+          Devletleri ve diğer ülkelerdeki sunucularında saklanır ve işlenir.
+        </li>
         <li>
           Çökme ve performans raporları, uygulama mağazalarını işleten Apple ve Google'ın
           sistemlerinde işlenir.
@@ -102,12 +134,12 @@
         </li>
         <li>
           Yapay zeka ile kart oluşturmayı seçtiğinizde kelimeleriniz ve istek parametreleri,
-          kartların oluşturulması amacıyla Cloudflare ve Groq sistemlerine iletilir. Bu hizmet
+          kartların oluşturulması amacıyla Cloudflare ve Groq sistemlerine iletilir. Worker'ımız
+          Groq'a IP adresinizi ve cihaz kimliğinizi iletmez. Bu hizmet
           sağlayıcılar verileri Amerika Birleşik Devletleri ve diğer ülkelerde işler; bu nedenle
-          kişisel verileriniz yurt dışına aktarılır. Bu aktarım, kart oluşturma öncesinde uygulama
-          içindeki izin kutusunda verdiğiniz açık rızanıza dayanır (KVKK m. 9/6-a). Bu rızayı
-          dilediğiniz zaman Ayarlar'dan geri alabilirsiniz; rızanın geri alınması sonraki
-          aktarımları durdurur.
+          kişisel verileriniz yurt dışına aktarılır. Bu aktarım yalnızca, kart oluşturma öncesinde
+          uygulama içindeki izin kutusunda izin vermeniz hâlinde gerçekleşir; izninizi dilediğiniz
+          zaman Ayarlar'dan geri alabilirsiniz ve bu, sonraki aktarımları durdurur.
         </li>
         <li>
           Uygulamanın indirilmesi, kurulması ve güncellenmesi sırasında Apple ve Google'ın işlediği
@@ -118,16 +150,26 @@
 
       <h2>6. Saklama süresi</h2>
       <ul>
-        <li>E-posta yazışmaları, son mesajdan 12 ay sonra silinir.</li>
+        <li>
+          E-posta yazışmaları, son mesajdan en geç 6 ay sonra ya da talebiniz üzerine daha önce elle
+          silinir: posta kutusu ayda bir kontrol edilir, son mesajı 5 aydan eski yazışmalar silinir
+          ve Gmail'in çöp kutusu hemen boşaltılır. Bundan sonra Google veriyi kendi saklama
+          politikasına göre sistemlerinden kaldırır; Google bunun genellikle yaklaşık 2 ay sürdüğünü
+          ve şifreli yedeklerinde verinin 6 aya kadar kalabildiğini belirtir.
+        </li>
         <li>
           Çökme ve performans raporları, Apple ve Google'ın kendi sistemlerinde belirlediği süre
           boyunca tutulur; veri sorumlusu bunları Apple ve Google'ın geliştirici araçlarında görür
           ve başka bir yerde saklamaz.
         </li>
         <li>
-          Yapay zeka ile kart oluşturmada Worker kodumuz kelimeleri ve IP adresini saklamaz
-          (gözlemlenebilirlik kapalıdır). Groq, hesabımızda veri saklamama (Zero Data Retention)
-          ayarı açık olduğu için girdi ve çıktıları kaydetmez.
+          Yapay zeka ile kart oluşturmada Worker kodumuz kelimeleri, IP adresinizi ve ondan
+          hesaplanan kodu hiçbir yere yazmaz ve Worker kayıtları kapalıdır. Worker'ımız bu kodu
+          Cloudflare'in istek sınırlama özelliğine verir; bu özellik her kod için istek sayısını
+          Cloudflare'in koşullarına göre tutar. Hesabımızda veri saklamama (Zero Data Retention)
+          ayarı açıktır ve Groq, bu ayar açıkken girdi ve çıktıları saklamadığını belirtir; girdi ve
+          çıktı içermediğini belirttiği kullanım üst verilerini ise tutar. Cloudflare'in kendi ağ
+          trafiği kayıtları Cloudflare'in gizlilik politikasına tabidir.
         </li>
       </ul>
 
